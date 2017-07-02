@@ -1,40 +1,25 @@
 import turtle
 
-def draw_square():
+def draw_square(some_turtle):
+    for i in range (1,5):
+        some_turtle.forward(100)
+        some_turtle.right(90)
+
+def draw_art():
     window = turtle.Screen()
     window.bgcolor("red")
-    
+    #Create the turtle Brad - Draws a square
     brad = turtle.Turtle()
     brad.shape("turtle")
-    brad.color("pink")
+    brad.color("yellow")
     brad.speed(2)
-
-    total_turns = 4
-    turn_count = 0
-
-    while (turn_count < total_turns):
-        brad.forward(100)
-        brad.right(90)
-        turn_count = turn_count + 1
-
-def draw_circle():
+    draw_square(brad)
+    #Create the turtle Angie - Draws a circle
     angie = turtle.Turtle()
     angie.shape("arrow")
-    angie.color("yellow")
+    angie.color("blue")
     angie.circle(100)
 
-def draw_triangle():
-    zelda = turtle.Turtle()
-    zelda.shape("turtle")
-    zelda.color("blue")
-
-    total_turns = 3
-    turn_count = 0
-    while (turn_count < total_turns):
-        zelda.forward(100)
-        zelda.right(120)
-        turn_count = turn_count + 1
+    window.exitonclick()
     
-draw_square()
-draw_circle()
-draw_triangle()
+draw_art()
