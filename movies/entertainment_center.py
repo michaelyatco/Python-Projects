@@ -1,3 +1,4 @@
+import fresh_tomatoes
 import media
 
 toy_story = media.Movie("Toy Story",
@@ -34,6 +35,9 @@ kung_fu_hustle = media.Movie("Kung Fu Hustle",
                              "An action/comedy set in China that pays homage to cinematic masterpieces",
                              "http://static.rogerebert.com/uploads/movie/movie_poster/kung-fu-hustle-2005/large_vSKFcFZ7Asvt9rON0glLD8FCKMU.jpg",
                              "https://www.youtube.com/watch?v=-m3IB7N_PRk")
+
+movies = [toy_story, avatar, assassins, midnight_in_paris, city_of_life_and_death, kung_fu_hustle]
+fresh_tomatoes.open_movies_page(movies)
 
 
 
