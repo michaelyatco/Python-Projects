@@ -39,6 +39,11 @@ kung_fu_hustle = media.Movie("Kung Fu Hustle",
 movies = [toy_story, avatar, assassins, midnight_in_paris, city_of_life_and_death, kung_fu_hustle]
 fresh_tomatoes.open_movies_page(movies)
 
+#print(media.Movie.VALID_RATINGS)
+print(media.Movie.__doc__)
+print(media.Movie.__name__)
+print(media.Movie.__module__)
+
 
 
 
